@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Summary - Yuda</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind CDN (sama seperti index.html) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+  <!-- Container utama -->
+  <main class="max-w-3xl w-full px-4">
+    <!-- Card profil -->
+    <section class="bg-white shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center md:items-start">
+
+      <!-- FOTO PROFIL -->
+      <div class="shrink-0">
+        <!-- GANTI src sesuai nama file fotomu -->
+        <img
+          src="images/Yuda photo.jpg"
+          alt="Foto Profil Yuda"
+          class="w-40 h-40 rounded-full object-cover border-4 border-blue-500 shadow-md"
+        />
+      </div>
+
+      <!-- INFO PROFIL -->
+      <div class="flex-1 space-y-4">
+        <!-- Nama & Role -->
+        <header>
+          <h1 class="text-3xl font-bold text-gray-900">Yuda Mubarok</h1>
+          <p class="text-blue-600 font-medium">Software Engineer</p>
+        </header>
+
+        <!-- Summary / Tentang saya -->
+        <section>
+          <h2 class="text-lg font-semibold text-gray-800 mb-1">Tentang Saya</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Saya adalah seorang Software Engineer yang tertarik pada pengembangan
+            aplikasi web sederhana dan fungsional. Saat ini saya fokus belajar
+            JavaScript, HTML, dan CSS, termasuk membangun mini project seperti
+            aplikasi Todo List. Saya suka menulis kode yang rapi, mudah dipahami,
+            dan mudah dikembangkan lagi ke depannya.
+          </p>
+        </section>
+
+        <!-- Skills -->
+        <section>
+          <h2 class="text-lg font-semibold text-gray-800 mb-1">Skills</h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">HTML</span>
+            <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">CSS / Tailwind</span>
+            <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">JavaScript</span>
+            <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">Git & GitHub</span>
+            <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">Problem Solving</span>
+          </div>
+        </section>
+
+        <!-- Projects / Experience singkat -->
+        <section>
+          <h2 class="text-lg font-semibold text-gray-800 mb-1">Projects</h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Aplikasi Todo List sederhana dengan fitur filter & clear.</li>
+            <li>Latihan mini project front-end lainnya (landing page, form, dsb.).</li>
+          </ul>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-lg font-semibold text-gray-800 mb-1">Kontak</h2>
+          <p class="text-gray-700">
+            Email:
+            <a href="mailto:yuda.mubarok3@gmail.com" class="text-blue-600 underline">
+              yuda.mubarok3@gmail.com
+            </a>
+          </p>
+          <p class="text-gray-700">
+            GitHub:
+            <a href="https://github.com/Yuda2M" target="_blank" class="text-blue-600 underline">
+              github.com/Yuda2M
+            </a>
+          </p>
+          <p class="text-gray-700">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/Yuda-Mubarok" target="_blank" class="text-blue-600 underline">
+              linkedin.com/in/Yuda-Mubarok
+            </a>
+          </p>
+        </section>
+
+        <!-- Link kembali ke Todo List -->
+        <div class="pt-4">
+          <a href="index.html" class="text-sm text-gray-600 hover:text-blue-600 underline">
+            ← Kembali ke Todo List
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
