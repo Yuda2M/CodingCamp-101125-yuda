@@ -4,6 +4,22 @@ body{
     height: 100vh;
 }
 .form-section {
-    display: grid;
-    gap: 10px;
+    display: flex;
+    gap: fit-content;
+    width: 100%;
 }
+.todo-input, .todo-date {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc ;
+    border-radius: 5px;
+    /* gap: 2px; */
+    
+    /* flex gap-2 w-full */
+}
+.headerId{
+    width: justify-content;
+}
+/* .todo-date{
+    max-width: 200px;
+} */

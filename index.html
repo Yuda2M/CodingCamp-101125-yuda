@@ -10,40 +10,49 @@
 </head>
 <body>
     <!-- Header section  -->
-    <header>
+    <header id="headerId">
         <h1 class="text-2xl font-bold pb-5">Todo List Apps</h1>
-        <p>Seorang Software Engineer</p>
+        <p>You can add your todo list here below</p>
+    </br>
     </header>
 
     <!-- Main content  -->
     <main>
-        <section class="form-section">
+        <section class="form-section flex gap-6 w-full">
             <form>
                 <!-- todo input-->
-                    <input type="text" class="border rounded p-2" id="todo-input" placeholder="Enter a new todo item">
+                    <input type="text" class="border rounded p-2" id="todo-input" placeholder="Enter a new todo item" id="todo-input">
 
                  <!-- todo date  -->
-                  <input type="date" class="border rounded p-2" id="todo-date" placeholder="Enter due date">
+                  <input type="date" class="border rounded p-2 " id="todo-date" placeholder="Enter due date" id="todo-date">
             </form>
 
             <!-- add button -->
-            <button type="button" onclick="addTodo();" class="bg-blue-500 text-white p-2 rounded ml-2" id="add-button">
+            <button type="button" onclick="addTodo();" class="bg-blue-500 text-white p-2 rounded ml-2 inset-full">
                 Add Todo
             </button> 
         </section>
         <!-- action section -->
-        <section class="flex pt-2 justify-between">
+        <section class="flex pt-2 justify-between gap-1">
+
             <!-- filter option  -->
-             <button class="">Filter todo</button>
-            <!-- clear all button  -->
-             <button class="">Clear All</button>
+             <input type="text" id="filter-input" placeholder="Filter by keyword" class="border rounded p-2">
+             <button class="border rounded p-2 bg-blue-500 text-white" type="button" onclick="filterTodos();">Filter todo</button>
+            
+             <!-- reset filter button -->
+              <button type="button" class="border rounded p-2 bg-gray-500 text-white" onclick="resetFilter();">Reset Filter</button>
+             
+              <!-- clear all button  -->
+             <button class="border rounded p-2 bg-red-500 text-white" type="button" onclick="clearAllTodos();">Clear All</button>
         </section>
+        
         <!-- todo list section  -->
         <section class="pt-2">
             <header>
-                <h1 class="">List of Todos</h1>
+                <h1 class="text-2xl font-semibold">List of Todos</h1>
             </header>
             <ul class="pt-2" id="todo-list">
+                
                 <!-- todo items will be added here dynamically -->
                  <li>No todo items yet.</li>
             </ul>
@@ -51,9 +60,9 @@
     </main>
 
     <!-- footer section  -->
-    <footer class="">
+    <footer class="pt-5">
         <p>&copy; 2025 Yuda Portofolio</p>
-        <h2>Tentang saya</h2>
+        <!-- <h2>Tentang saya</h2> -->
             <!-- <img src="images/Yuda photo.jpg" alt="YudaPhoto" width="100px"> -->
     </footer>
     <!-- <h3>Hai, Ini Adalah Tugas MiniProject Dari RevoU</h3> -->
