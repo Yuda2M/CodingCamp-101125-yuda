@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Yuda</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- instalasi tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header section  -->
+    <header>
+        <h1 class="text-2xl font-bold pb-5">Todo List Apps</h1>
+        <p>Seorang Software Engineer</p>
+    </header>
+
+    <!-- Main content  -->
+    <main>
+        <section class="form-section">
+            <form>
+                <!-- todo input-->
+                    <input type="text" class="border rounded p-2" id="todo-input" placeholder="Enter a new todo item">
+
+                 <!-- todo date  -->
+                  <input type="date" class="border rounded p-2" id="todo-date" placeholder="Enter due date">
+            </form>
+
+            <!-- add button -->
+            <button type="button" onclick="addTodo();" class="bg-blue-500 text-white p-2 rounded ml-2" id="add-button">
+                Add Todo
+            </button> 
+        </section>
+        <!-- action section -->
+        <section class="flex pt-2 justify-between">
+            <!-- filter option  -->
+             <button class="">Filter todo</button>
+            <!-- clear all button  -->
+             <button class="">Clear All</button>
+        </section>
+        <!-- todo list section  -->
+        <section class="pt-2">
+            <header>
+                <h1 class="">List of Todos</h1>
+            </header>
+            <ul class="pt-2" id="todo-list">
+                <!-- todo items will be added here dynamically -->
+                 <li>No todo items yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="">
+        <p>&copy; 2025 Yuda Portofolio</p>
+        <h2>Tentang saya</h2>
+            <!-- <img src="images/Yuda photo.jpg" alt="YudaPhoto" width="100px"> -->
+    </footer>
+    <!-- <h3>Hai, Ini Adalah Tugas MiniProject Dari RevoU</h3> -->
+    <!-- Link to external JavaScript File -->
+     <script src="js/script.js"></script>
+</body>
+</html>
