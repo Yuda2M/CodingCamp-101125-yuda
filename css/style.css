@@ -2,6 +2,13 @@ body{
     justify-items: center;
     align-content: center;
     height: 100vh;
+    background-color: whitesmoke;
+}
+.profile-bg{
+    background-image: url('/images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .form-section {
     display: flex;
